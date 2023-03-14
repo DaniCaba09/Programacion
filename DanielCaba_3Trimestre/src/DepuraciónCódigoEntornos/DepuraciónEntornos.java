@@ -11,9 +11,9 @@ public class DepuraciónEntornos {
 	Scanner S = new Scanner(System.in);
 	System.out.print("Introduce un número para comprobar si es primo: ");
 	num = S.nextInt();
-	for(int i=2; i<=num/2; i++){
-	if(num % i == 0){
-	resultado = false;
+	for(int i=2; i<=num; i++){
+		if(num % i == 0){
+			resultado = false;
 		}
 	}
 	if (resultado){

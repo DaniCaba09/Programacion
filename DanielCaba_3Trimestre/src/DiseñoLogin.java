@@ -18,6 +18,7 @@ import java.awt.SystemColor;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
 
 public class DiseñoLogin extends JFrame {
 	private JTextField textField;
@@ -30,6 +31,7 @@ public class DiseñoLogin extends JFrame {
 	private JLabel lblNewLabel_5;
 	static DiseñoLogin vP;
 	static DiseñoLogin vS;
+	private JLabel lblNewLabel_6;
 
 	/**
 	 * Launch the application.
@@ -52,7 +54,7 @@ public class DiseñoLogin extends JFrame {
 	 */
 	public DiseñoLogin() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(400, 400, 550, 500);
+		setBounds(550, 400, 550, 500);
 		JPanel contentPane = new JPanel();
 		contentPane.setBackground(SystemColor.info);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -61,7 +63,7 @@ public class DiseñoLogin extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("REGISTRAR NUEVO USUARIO");
-		lblNewLabel.setForeground(new Color(64, 128, 128));
+		lblNewLabel.setForeground(new Color(255, 140, 0));
 		lblNewLabel.setBounds(94, 23, 345, 28);
 		lblNewLabel.setLabelFor(this);
 		lblNewLabel.setBackground(new Color(64, 128, 128));
@@ -69,6 +71,7 @@ public class DiseñoLogin extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Nombre:");
+		lblNewLabel_1.setForeground(new Color(240, 248, 255));
 		lblNewLabel_1.setBounds(70, 79, 107, 35);
 		contentPane.add(lblNewLabel_1);
 		
@@ -82,6 +85,7 @@ public class DiseñoLogin extends JFrame {
 		contentPane.add(passwordField);
 		
 		JLabel lblNewLabel_2 = new JLabel("Apellidos:");
+		lblNewLabel_2.setForeground(new Color(240, 248, 255));
 		lblNewLabel_2.setBounds(72, 141, 46, 14);
 		contentPane.add(lblNewLabel_2);
 		
@@ -91,6 +95,7 @@ public class DiseñoLogin extends JFrame {
 		contentPane.add(textField_1);
 		
 		lblNewLabel_3 = new JLabel("Correo Electrónico:");
+		lblNewLabel_3.setForeground(new Color(240, 248, 255));
 		lblNewLabel_3.setBounds(70, 187, 92, 14);
 		contentPane.add(lblNewLabel_3);
 		
@@ -100,6 +105,7 @@ public class DiseñoLogin extends JFrame {
 		contentPane.add(textField_2);
 		
 		lblNewLabel_4 = new JLabel("Teléfono:");
+		lblNewLabel_4.setForeground(new Color(240, 248, 255));
 		lblNewLabel_4.setBounds(70, 244, 92, 14);
 		contentPane.add(lblNewLabel_4);
 		
@@ -109,12 +115,13 @@ public class DiseñoLogin extends JFrame {
 		contentPane.add(textField_3);
 		
 		lblNewLabel_5 = new JLabel("Contraseña:");
+		lblNewLabel_5.setForeground(new Color(240, 248, 255));
 		lblNewLabel_5.setBounds(70, 293, 72, 14);
 		contentPane.add(lblNewLabel_5);
 		
 		Button button = new Button("Registrarse");
 		button.setFont(new Font("Impact", Font.PLAIN, 18));
-		button.setBackground(new Color(64, 128, 128));
+		button.setBackground(new Color(255, 165, 0));
 		button.setBounds(219, 346, 107, 48);
 		contentPane.add(button);
 		button.addActionListener(new ActionListener() {
@@ -136,6 +143,11 @@ public class DiseñoLogin extends JFrame {
 		btnIniciarSesion.setFont(new Font("Impact", Font.ITALIC, 14));
 		btnIniciarSesion.setBounds(383, 414, 120, 23);
 		contentPane.add(btnIniciarSesion);
+		
+		lblNewLabel_6 = new JLabel("New label");
+		lblNewLabel_6.setIcon(new ImageIcon("C:\\Users\\dcs00\\eclipse-workspace\\DanielCaba_3Trimestre\\src\\ImagenesLogin\\550393.jpg"));
+		lblNewLabel_6.setBounds(-356, -30, 1161, 517);
+		contentPane.add(lblNewLabel_6);
 		
 		
 		

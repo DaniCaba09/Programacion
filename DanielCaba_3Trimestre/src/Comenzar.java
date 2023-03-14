@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 public class Comenzar extends JFrame {
 
@@ -54,6 +55,11 @@ public class Comenzar extends JFrame {
 		panel.setBounds(242, 16, 1, 1);
 		contentPane.add(panel);
 		panel.setLayout(null);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\dcs00\\eclipse-workspace\\DanielCaba_3Trimestre\\src\\ImagenesLogin\\inazuma-eleven-ina11.gif"));
+		lblNewLabel_1.setBounds(0, 0, 434, 261);
+		contentPane.add(lblNewLabel_1);
 	}
 
 }

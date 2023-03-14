@@ -13,6 +13,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import java.awt.Button;
+import javax.swing.ImageIcon;
+import javax.swing.UIManager;
 
 public class IniciarSesion extends JFrame {
 
@@ -54,12 +56,13 @@ public class IniciarSesion extends JFrame {
 		JLabel lblNewLabel = new JLabel("INICIAR SESIÓN");
 		lblNewLabel.setBackground(new Color(135, 206, 235));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setForeground(new Color(153, 102, 51));
+		lblNewLabel.setForeground(new Color(175, 238, 238));
 		lblNewLabel.setFont(new Font("Impact", Font.PLAIN, 30));
 		lblNewLabel.setBounds(109, 26, 208, 27);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Correo Electrónico:");
+		lblNewLabel_1.setForeground(new Color(255, 255, 255));
 		lblNewLabel_1.setFont(new Font("Cambria Math", Font.PLAIN, 15));
 		lblNewLabel_1.setBounds(35, 84, 138, 27);
 		contentPane.add(lblNewLabel_1);
@@ -70,6 +73,7 @@ public class IniciarSesion extends JFrame {
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Nombre de Usuario:");
+		lblNewLabel_1_1.setForeground(new Color(255, 255, 255));
 		lblNewLabel_1_1.setFont(new Font("Cambria Math", Font.PLAIN, 15));
 		lblNewLabel_1_1.setBounds(35, 127, 138, 27);
 		contentPane.add(lblNewLabel_1_1);
@@ -80,6 +84,7 @@ public class IniciarSesion extends JFrame {
 		contentPane.add(textField_1);
 		
 		JLabel lblNewLabel_1_1_1 = new JLabel("Contraseña:");
+		lblNewLabel_1_1_1.setForeground(new Color(255, 255, 255));
 		lblNewLabel_1_1_1.setFont(new Font("Cambria Math", Font.PLAIN, 15));
 		lblNewLabel_1_1_1.setBounds(35, 165, 138, 27);
 		contentPane.add(lblNewLabel_1_1_1);
@@ -95,6 +100,12 @@ public class IniciarSesion extends JFrame {
 		button.setBackground(new Color(250, 250, 210));
 		button.setBounds(163, 205, 107, 35);
 		contentPane.add(button);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\dcs00\\eclipse-workspace\\DanielCaba_3Trimestre\\src\\ImagenesLogin\\football.gif"));
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.LEFT);
+		lblNewLabel_2.setBounds(0, 0, 434, 261);
+		contentPane.add(lblNewLabel_2);
 		
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
